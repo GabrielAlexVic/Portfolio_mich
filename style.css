@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Gallant Black Italic';
+    src: url('fonts/Gallant/Gallant/black-italic.otf') format('opentype');
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(142deg, rgba(2,0,36,1) 0%, rgba(10,6,64,1) 35%, rgba(36,80,157,1) 100%);
+    font-family: 'Gallant Black Italic', sans-serif;
+    min-height: 100vh;
+}
+
+nav {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.typewriter {
+    overflow: hidden; /* Para garantir que o texto não seja exibido até que a animação comece */
+    border-right: .15em solid orange; /* Simula o cursor piscando */
+    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+    margin: 0 auto; /* Centraliza o texto */
+    letter-spacing: .15em; /* Espaçamento entre as letras */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite; /* Definição da animação */
+  }
+  
+  /* Animação de digitação */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* Animação do cursor piscando */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    30% { border-color: orange }
+  }
