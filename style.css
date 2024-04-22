@@ -4,9 +4,10 @@
 }
 
 body {
-    background: rgb(2,0,36);
-    background: linear-gradient(142deg, rgba(2,0,36,1) 0%, rgba(10,6,64,1) 35%, rgba(36,80,157,1) 100%);
+    background: rgb(253,252,243);
+    background: linear-gradient(142deg, rgba(253,252,243,1) 0%, rgba(255,250,240,1) 25%, rgba(255,248,220,1) 50%, rgba(255,239,219,1) 75%, rgba(255,235,205,1) 100%);
     font-family: 'Gallant Black Italic', sans-serif;
+    color: #000;
     min-height: 100vh;
 }
 
@@ -26,10 +27,16 @@ p {
     overflow: hidden; /* Para garantir que o texto não seja exibido até que a animação comece */
     border-right: .15em solid orange; /* Simula o cursor piscando */
     white-space: nowrap; /* Evita que o texto quebre em várias linhas */
-    margin: 0 auto; /* Centraliza o texto */
-    letter-spacing: .15em; /* Espaçamento entre as letras */
-    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite; /* Definição da animação */
+    margin: 0 ; /* Centraliza o texto */
+    /* letter-spacing: .15em; Espaçamento entre as letras */
+    animation: typing 3.5s steps(40, end) forwards, blink-caret .75s step-end infinite; /* Definição da animação */
   }
+
+  .typewriter::after {
+    display: inline-block;
+    width: 0; /* Começa invisível */
+    border-right: .15em solid orange;
+  }  
   
   /* Animação de digitação */
   @keyframes typing {
@@ -40,5 +47,5 @@ p {
   /* Animação do cursor piscando */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    30% { border-color: orange }
+    50% { border-color: orange }
   }
