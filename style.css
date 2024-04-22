@@ -12,7 +12,7 @@ body {
 }
 
 nav {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 p {
@@ -24,28 +24,29 @@ p {
 }
 
 .typewriter {
-    overflow: hidden; /* Para garantir que o texto não seja exibido até que a animação comece */
-    border-right: .15em solid orange; /* Simula o cursor piscando */
-    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
-    margin: 0 ; /* Centraliza o texto */
-    /* letter-spacing: .15em; Espaçamento entre as letras */
-    animation: typing 3.5s steps(40, end) forwards, blink-caret .75s step-end infinite; /* Definição da animação */
-  }
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 7px;
+  overflow: hidden;
+  border-right: 2px solid hsl(0, 0%, 0%);
+  white-space: nowrap;
+  animation: typewriter 2s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms infinite;
+}
 
-  .typewriter::after {
-    display: inline-block;
-    width: 0; /* Começa invisível */
-    border-right: .15em solid orange;
-  }  
-  
-  /* Animação de digitação */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+@keyframes typewriter {
+  from {
+    width: 0;
   }
-  
-  /* Animação do cursor piscando */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange }
+  to {
+    width: 710px;
   }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: hsl(0, 0%, 80%);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
