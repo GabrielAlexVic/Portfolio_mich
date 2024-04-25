@@ -1,22 +1,25 @@
 @font-face {
-    font-family: 'Gallant Black Italic';
-    src: url('fonts/Gallant/Gallant/black-italic.otf') format('opentype');
+  font-family: 'Gallant Black Italic';
+  src: url('fonts/Gallant/Gallant/black-italic.otf') format('opentype');
 }
 
 body {
-    background: rgb(253,252,243);
-    background: linear-gradient(142deg, rgba(253,252,243,1) 0%, rgba(255,250,240,1) 25%, rgba(255,248,220,1) 50%, rgba(255,239,219,1) 75%, rgba(255,235,205,1) 100%);
-    font-family: 'Gallant Black Italic', sans-serif;
-    color: #000;
-    min-height: 100vh;
+  background: rgb(253,252,243);
+  background: linear-gradient(142deg, rgba(253,252,243,1) 0%, rgba(255,250,240,1) 25%, rgba(255,248,220,1) 50%, rgba(255,239,219,1) 75%, rgba(255,235,205,1) 100%);
+  font-family: 'Gallant Black Italic', sans-serif;
+  color: #000;
+  min-height: 100vh;
 }
 
 nav {
-    font-size: 25px;
+  font-size: 25px;
 }
 
-p {
-    font-size: 20px;
+.offcanvasBackground {
+  background-color: RGBA(var(--bs-dark-rgb), var(--bs-bg-opacity, 1)) !important;
+  color: #fff !important;
+  /* background: rgb(253,252,243); */
+  /* background: linear-gradient(142deg, rgba(253,252,243,1) 0%, rgba(255,250,240,1) 25%, rgba(255,248,220,1) 50%, rgba(255,239,219,1) 75%, rgba(255,235,205,1) 100%); */
 }
 
 .title {
@@ -42,6 +45,7 @@ p {
     width: 710px;
   }
 }
+
 @keyframes blinkTextCursor {
   from {
     border-right-color: hsl(0, 0%, 80%);
@@ -49,4 +53,8 @@ p {
   to {
     border-right-color: transparent;
   }
+}
+
+.portfolioImg {
+  height: 250px;
 }
