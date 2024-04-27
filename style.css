@@ -9,6 +9,7 @@ body {
   font-family: 'Gallant Black Italic', sans-serif;
   color: #000;
   min-height: 100vh;
+  max-height: 100vh;
 }
 
 nav {
