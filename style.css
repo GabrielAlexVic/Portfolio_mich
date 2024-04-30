@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Gallant Black Italic';
-  src: url('fonts/Gallant/Gallant/black-italic.otf') format('opentype');
+  src: url('/assets/fonts/Gallant/Gallant\ black.otf') format('opentype');
 }
 
 body {
@@ -30,7 +30,7 @@ nav {
 .typewriter {
   position: relative;
   font-weight: bold;
-  letter-spacing: 7px;
+  letter-spacing: 6px;
   overflow: hidden;
   border-right: 2px solid hsl(0, 0%, 0%);
   white-space: nowrap;
@@ -58,4 +58,8 @@ nav {
 
 .portfolioImg {
   height: 250px;
+}
+
+.logo {
+  height: 200px;
 }
