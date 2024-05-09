@@ -27,10 +27,22 @@ nav {
     font-size: 50px;
 }
 
+@media (max-width: 768px) {
+  .title {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 6vw;
+  }
+}
+
 .typewriter {
   position: relative;
   font-weight: bold;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
   overflow: hidden;
   border-right: 2px solid hsl(0, 0%, 0%);
   white-space: nowrap;
@@ -43,7 +55,7 @@ nav {
     width: 0;
   }
   to {
-    width: 710px;
+    width: 100%;
   }
 }
 
